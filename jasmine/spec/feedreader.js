@@ -28,16 +28,16 @@ $(function() {
         var body = document.body;
         var menuIcon = document.querySelector('.menu-icon-link');
 
-        it("body has 'slide-menu' initially", function(){
-            expect(body.className).toContain("slide-menu");
+        it("body has 'menu-hidden' initially", function(){
+            expect(body.className).toContain("menu-hidden");
         });
 
-        it("body toggles the class 'slide-menu' on clicking menu icon", function() {
+        it("body toggles the class 'menu-hidden' on clicking menu icon", function() {
             menuIcon.click();
-            expect(body.className).not.toContain('slide-menu');
+            expect(body.className).not.toContain('menu-hidden');
 
             menuIcon.click();
-            expect(body.className).toContain('slide-menu');
+            expect(body.className).toContain('menu-hidden');
         });
     });
 
