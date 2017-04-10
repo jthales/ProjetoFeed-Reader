@@ -19,6 +19,7 @@ $(function() {
             allFeeds.forEach(function(feed){
                 expect(feed.URL).toBeDefined();
                 expect(feed.URL.length).not.toBe(0);
+                expect(feed.url).toMatch(/^(http|https):\/\//);
             });
         });
     });
