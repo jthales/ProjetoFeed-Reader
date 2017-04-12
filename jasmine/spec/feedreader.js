@@ -15,10 +15,10 @@ $(function() {
             });
         });
 
-        it('have URL', function(){
+        it('have url', function(){
             allFeeds.forEach(function(feed){
-                expect(feed.URL).toBeDefined();
-                expect(feed.URL.length).not.toBe(0);
+                expect(feed.url).toBeDefined();
+                expect(feed.url.length).not.toBe(0);
                 expect(feed.url).toMatch(/^(http|https):\/\//);
             });
         });
